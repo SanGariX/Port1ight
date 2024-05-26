@@ -60,21 +60,32 @@
   align-items: center;
   justify-content: space-between;
   padding: 1.1em 0.8em;
-  border: 1px solid #000;
+  background-color: var(--color-black);
+  min-width: 130px;
+  max-height: 50px;
 }
 .text-btn {
-  font-size: 1.4em;
+  font-size: 1.4rem;
   font-weight: 700;
   color: var(--color-white);
 }
-.bg__img {
-  display: grid;
-  grid-template-columns: 31px;
+.bg__btn-box {
+  display: block;
+  width: 31px;
+  height: 31px;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
-.bg__img__dir {
-  grid-column: 1/-1;
+.bg__btn__img__dir {
+  position: absolute;
+  inset: 0 0 0 0;
+  margin: auto auto;
+}
+.bg__btn__img__star {
+  inset: 0 0 0 0;
+  margin: auto auto;
+  position: absolute;
 }
 /* wrapper */
 .wrapper {
@@ -155,6 +166,7 @@
 /*! Main */
 main {
   flex-grow: 1;
+  margin-top: 100px;
 }
 /* sign-mail */
 .sign-mail {

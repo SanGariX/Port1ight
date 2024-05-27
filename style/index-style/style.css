@@ -78,6 +78,7 @@
 .main-top__bottom__box2 {
   perspective: 700px;
   width: 285px;
+  display: block;
   animation: main-top__bottom__box2 4s linear forwards;
 }
 @keyframes main-top__bottom__box2 {

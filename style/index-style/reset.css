@@ -376,6 +376,7 @@ aside {
 
 html,
 body {
+  /* background-color: gray; */
   font-family: "Nunito", sans-serif;
   color: var(--color-black);
   height: 100%;

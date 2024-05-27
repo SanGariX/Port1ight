@@ -373,9 +373,6 @@ header,
 aside {
   display: block;
 }
-body * {
-  outline: 1px solid red;
-}
 html,
 body {
   /* background-color: gray; */

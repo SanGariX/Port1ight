@@ -1,12 +1,12 @@
 :root {
   /* font-size */
-  --font-size-main-title: 10em;
-  --font-size-section-title: 4em;
-  --font-size-text35: 3.5em;
-  --font-size-text30: 3em;
-  --font-size-text25: 2.5em;
-  --font-size-text20: 2em;
-  --font-size-text18: 1.8em;
+  --font-size-main-title: 10rem;
+  --font-size-section-title: 4rem;
+  --font-size-text35: 3.5rem;
+  --font-size-text30: 3rem;
+  --font-size-text25: 2.5rem;
+  --font-size-text20: 2rem;
+  --font-size-text18: 1.8rem;
   /* color */
   --color-black: #030211;
   --color-white: #fff;
@@ -17,6 +17,7 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+/* #region logo */
 .logo {
   display: inline-block;
   font-size: 3em;
@@ -37,7 +38,8 @@
   text-decoration: underline 0.08em solid;
   color: var(--color-white);
 }
-/*! btn */
+/* #endregion logo */
+/*#region btn */
 .dutton-default {
   background-color: var(--color-black);
   border-radius: 4em;
@@ -51,7 +53,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.8em;
+  padding: 0.6em 1.2em;
   border: 1px solid #000;
 }
 .dutton-default--large {
@@ -83,17 +85,27 @@
   margin: auto auto;
 }
 .bg__btn__img__star {
-  inset: 0 0 0 0;
-  margin: auto auto;
-  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: btn__star__rotate 6s linear infinite;
 }
-/* wrapper */
+@keyframes btn__star__rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*#endregion btn */
+/* #region wrapper */
 .wrapper {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
-/*! Header */
+/* #endregion wrapper */
+/*#region Header */
 .header {
   padding-top: 50px;
 }
@@ -163,12 +175,14 @@
   background-color: var(--color-black);
   align-self: start;
 }
-/*! Main */
+/*#endregion Header */
+/*#region Main */
 main {
   flex-grow: 1;
   margin-top: 100px;
 }
-/* sign-mail */
+/*#endregion Main */
+/*#region sign-mail */
 .sign-mail {
   background-color: var(--color-black);
   text-align: center;
@@ -204,7 +218,8 @@ main {
   border-radius: 4em;
   padding: 9px 18px;
 }
-/*? Footer  */
+/*#endregion sign-mail */
+/*#region Footer  */
 .footer {
   padding: 150px 0 20px 0;
 }
@@ -331,8 +346,8 @@ main {
   text-decoration: underline solid 2px;
   text-underline-offset: 3px;
 }
-
-/*Обнулення*/
+/*#endregion Footer  */
+/*#region Обнулення*/
 * {
   padding: 0;
   margin: 0;
@@ -434,4 +449,4 @@ h6 {
   font-size: inherit;
   font-weight: 400;
 }
-/*--------------------*/
+/*#endregion Обнулення*/

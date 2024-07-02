@@ -39,6 +39,22 @@
   color: var(--color-white);
 }
 /* #endregion logo */
+/* #region black */
+.black__title {
+  font-family: "Syne", sans-serif;
+  color: var(--color-white);
+  font-size: var(--font-size-section-title);
+  font-weight: 700;
+  line-height: 5rem;
+  text-align: center;
+  margin: 0 auto 6rem auto;
+}
+.black__title span {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  padding: 0 0.7rem;
+}
+/* #endregion black */
 /*#region btn */
 .dutton-default {
   background-color: var(--color-black);
@@ -403,7 +419,7 @@ body {
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
-input,
+/* input, */
 textarea,
 select {
   -webkit-box-shadow: 0 0 0 1000px inset #fff;

@@ -72,6 +72,15 @@
   padding: 0.6em 1.2em;
   border: 1px solid #000;
 }
+.dutton-default--black {
+  border-radius: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6em 1.2em;
+  border: 1px solid #fff;
+  background-color: var(--color-black);
+}
 .dutton-default--large {
   border-radius: 4em;
   display: flex;

@@ -968,6 +968,12 @@
   align-items: center;
   justify-content: center;
 }
+.team__link {
+  gap: 10px;
+}
+.team__link:hover .about__link__text {
+  color: var(--color-black);
+}
 /* #endregion team */
 /* #region media */
 @media (max-width: 1970px) {

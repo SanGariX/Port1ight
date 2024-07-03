@@ -87,6 +87,9 @@
   border: 1px solid #fff;
   background-color: var(--color-black);
 }
+.link-default--black:hover {
+  background: var(--color-white);
+}
 .link-default--large {
   border-radius: 4em;
   display: flex;

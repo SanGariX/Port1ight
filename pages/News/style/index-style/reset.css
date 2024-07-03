@@ -54,7 +54,7 @@
   padding: 0.8em;
   border: 1px solid #000;
 }
-.dutton-default--large {
+.link-default--large {
   border-radius: 4em;
   display: flex;
   align-items: center;
@@ -62,7 +62,7 @@
   padding: 1.1em 0.8em;
   border: 1px solid #000;
 }
-.text-btn {
+.text-link {
   font-size: 1.4em;
   font-weight: 700;
   color: var(--color-white);

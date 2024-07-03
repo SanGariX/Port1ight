@@ -1,6 +1,3 @@
-input {
-  display: none;
-}
 /* #region main-top title */
 .main-top__title {
   text-align: center;
@@ -35,8 +32,9 @@ input {
   text-decoration: underline 1px solid;
   text-underline-offset: 0.35rem;
 }
-.main-top__btn {
+.main-top__link {
   margin: 30px auto;
+  max-width: 126px;
 }
 /* #endregion main-top title */
 /* #region  main-top__bottom*/
@@ -476,17 +474,21 @@ input {
   text-decoration: underline wavy #492cff 2px;
   text-underline-offset: 6px;
 }
-.about__btn .text-btn {
+.about__link {
+  max-width: 180px;
+}
+.about__link .text-link {
   color: var(--color-black);
 }
-.about__btn .bg__btn-box {
+.about__link .bg__link-box {
   margin-left: 10px;
 }
-.about__btn__dir {
+.about__link__dir {
   width: 10px;
   height: 10px;
   object-fit: cover;
 }
+
 @keyframes main-top__rotate {
   100% {
     transform: rotate(360deg);
@@ -543,7 +545,7 @@ input {
   margin: 2.5rem 0;
   max-width: 36rem;
 }
-.unlock__btn-box {
+.unlock__link-box {
   width: 56px;
   height: 56px;
 }
@@ -661,6 +663,7 @@ input {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 3;
 }
 .project__item__link::before {
   width: 100%;
@@ -669,6 +672,7 @@ input {
   background: url(../../img/svg/project-btn.svg) 0 0 / cover no-repeat;
   position: absolute;
   animation: rotate-project 10s linear infinite;
+  z-index: 1;
 }
 @keyframes rotate-project {
   100% {
@@ -683,6 +687,9 @@ input {
   max-width: 70px;
   position: relative;
   z-index: 2;
+}
+.project__link__text span {
+  color: var(--color-black);
 }
 .project__link__text svg {
   margin-top: 10px;
@@ -902,20 +909,20 @@ input {
   right: 0;
   top: 0;
 }
-.blog__btn-box {
-  text-align: center;
+.blog__link-box {
   margin: 100px 0;
 }
-.blog__btn {
-  display: inline-flex;
-  justify-content: center;
+.blog__link {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 10px;
   font-size: var(--font-size-text18);
   font-weight: 700;
   line-height: 136.388889%; /* 24.55px/18 */
+  max-width: 140px;
+  margin: 0 auto;
 }
-.blog__btn span {
+.blog__link span {
   display: inline-flex;
   align-items: center;
   justify-content: center;

@@ -56,7 +56,7 @@
 }
 /* #endregion black */
 /*#region btn */
-.dutton-default {
+.link-default {
   background-color: var(--color-black);
   border-radius: 4em;
   display: flex;
@@ -64,7 +64,7 @@
   justify-content: space-between;
   padding: 0.8em;
 }
-.dutton-default--white {
+.link-default--white {
   border-radius: 4em;
   display: flex;
   align-items: center;
@@ -72,7 +72,13 @@
   padding: 0.6em 1.2em;
   border: 1px solid #000;
 }
-.dutton-default--black {
+.link-default--white:hover {
+  background-color: var(--color-black);
+}
+.link-default--white:hover span {
+  color: var(--color-white);
+}
+.link-default--black {
   border-radius: 4em;
   display: flex;
   align-items: center;
@@ -81,7 +87,7 @@
   border: 1px solid #fff;
   background-color: var(--color-black);
 }
-.dutton-default--large {
+.link-default--large {
   border-radius: 4em;
   display: flex;
   align-items: center;
@@ -91,12 +97,19 @@
   min-width: 130px;
   max-height: 50px;
 }
-.text-btn {
+.link-default--large:hover {
+  background-color: #fff;
+  border: 1px solid var(--color-black);
+}
+.link-default--large:hover span {
+  color: var(--color-black);
+}
+.text-link {
   font-size: 1.4rem;
   font-weight: 700;
   color: var(--color-white);
 }
-.bg__btn-box {
+.bg__link-box {
   display: block;
   width: 31px;
   height: 31px;
@@ -104,12 +117,12 @@
   justify-content: center;
   position: relative;
 }
-.bg__btn__img__dir {
+.bg__link__img__dir {
   position: absolute;
   inset: 0 0 0 0;
   margin: auto auto;
 }
-.bg__btn__img__star {
+.bg__link__img__star {
   width: 100%;
   height: 100%;
   animation: btn__star__rotate 6s linear infinite;
@@ -473,5 +486,8 @@ h5,
 h6 {
   font-size: inherit;
   font-weight: 400;
+}
+a {
+  cursor: pointer;
 }
 /*#endregion Обнулення*/

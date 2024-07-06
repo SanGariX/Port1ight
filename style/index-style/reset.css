@@ -105,6 +105,7 @@
   padding: 0.6em 1.2em;
   border: 1px solid #fff;
   background-color: var(--color-black);
+  gap: 10px;
 }
 .link-default--black:hover {
   background: var(--color-white);
@@ -161,9 +162,9 @@
   .link-default--large {
     min-width: 100px;
   }
-  .text-link {
+  /* .text-link {
     font-size: 1rem;
-  }
+  } */
 }
 /*#endregion btn */
 /* #region wrapper */
@@ -261,11 +262,20 @@
 }
 /*#endregion Header */
 /*#region Main */
-main {
+.main {
   flex-grow: 1;
   margin-top: 100px;
 }
-/*#endregion Main */
+@media (max-width:800px){
+  .main{
+    margin-top: 50px;
+  }
+}
+@media (max-width:400px){
+  .main{
+    margin-top: 10px;
+  }
+}/*#endregion Main */
 /*#region sign-mail */
 .sign-mail {
   background-color: var(--color-black);
@@ -303,9 +313,70 @@ main {
   padding: 9px 18px;
 }
 /*#endregion sign-mail */
+/* #region news */
+.news {
+  padding: 100px 0;
+}
+.news__title{
+  margin-bottom: 20px;
+}
+.news__text {
+font-size: 2.2rem;
+line-height: 136.409091%; /* 30.01px/22 */
+color: var(--color-white);
+text-align: center;
+margin: 0 auto;
+max-width: 790px;
+display: block;
+}
+.news__form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 520px;
+  margin: 50px auto 0;
+}
+.news__form__input {
+  display: block;
+  width: 350px;
+  height: 50px;
+font-size: 1.4rem;
+line-height: 136.428571%; /* 19.1px/14 */
+border-radius: 25px;
+border: 1px solid #D3D3D3;
+padding: 0 15px;
+}
+.news__form__btn{
+  gap: 10px;
+}
+.news__form__btn:hover .text-link {
+  color: var(--color-black);
+}
+@media (max-width:800px){
+  .news__text{
+    font-size: 1.8rem;
+    max-width: 700px;
+  }
+}
+@media (max-width:500px){
+  .news__form{
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (max-width:360px){
+  .news__form__input{
+    width: 100%;
+  }
+  .news__text{
+    font-size: 1.5rem;
+  }
+}
+/* #endregion news */
 /*#region Footer  */
 .footer {
   padding: 150px 0 20px 0;
+  background: url(../../img/svg/bg__footer.svg) center no-repeat;
 }
 .footer * {
   font-family: "syne", sans-serif;
@@ -632,11 +703,12 @@ input,
 button,
 textarea {
   font-family: inherit;
+  border: 0;
 }
 input::-ms-clear {
   display: none;
 }
-button {
+button,label {
   cursor: pointer;
   background-color: transparent;
 }

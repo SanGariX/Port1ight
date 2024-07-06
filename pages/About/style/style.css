@@ -509,12 +509,61 @@
     font-size: 2.3rem;
   }
 }
+@media (max-width: 920px) {
+  .questions__checkbox1:checked ~ * .questions__item__text1 {
+    height: 260px;
+  }
+  .questions__checkbox2:checked ~ * .questions__item__text2 {
+    height: 260px;
+  }
+  .questions__checkbox3:checked ~ * .questions__item__text3 {
+    height: 260px;
+  }
+  .questions__checkbox4:checked ~ * .questions__item__text4 {
+    height: 260px;
+  }
+  .questions__checkbox5:checked ~ * .questions__item__text5 {
+    height: 260px;
+  }
+}
 @media (max-width: 500px) {
   .questions__item__title {
     font-size: 1.8rem;
   }
   .questions__item__text {
     font-size: 1.5rem;
+  }
+  .questions__checkbox1:checked ~ * .questions__item__text1 {
+    height: 200px;
+  }
+  .questions__checkbox2:checked ~ * .questions__item__text2 {
+    height: 200px;
+  }
+  .questions__checkbox3:checked ~ * .questions__item__text3 {
+    height: 200px;
+  }
+  .questions__checkbox4:checked ~ * .questions__item__text4 {
+    height: 200px;
+  }
+  .questions__checkbox5:checked ~ * .questions__item__text5 {
+    height: 200px;
+  }
+}
+@media (max-width: 400px) {
+  .questions__checkbox1:checked ~ * .questions__item__text1 {
+    height: 290px;
+  }
+  .questions__checkbox2:checked ~ * .questions__item__text2 {
+    height: 290px;
+  }
+  .questions__checkbox3:checked ~ * .questions__item__text3 {
+    height: 290px;
+  }
+  .questions__checkbox4:checked ~ * .questions__item__text4 {
+    height: 290px;
+  }
+  .questions__checkbox5:checked ~ * .questions__item__text5 {
+    height: 290px;
   }
 }
 /* #endregion  questions*/

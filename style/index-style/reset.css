@@ -64,12 +64,12 @@
 }
 @media (max-width: 800px) {
   .black__title {
-    font-size: 2.5rem !important;
+    font-size: 2.5rem;
   }
 }
 @media (max-width: 500px) {
   .black__title {
-    font-size: 2rem !important;
+    font-size: 2rem;
     line-height: 3rem;
   }
 }

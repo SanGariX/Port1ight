@@ -1284,6 +1284,10 @@
   .unlock__item__text {
     font-size: 1.6rem;
   }
+  .project__item {
+    width: 85%;
+    margin: 0 auto;
+  }
   .project__item__img {
     max-width: 100%;
     max-height: 100%;
